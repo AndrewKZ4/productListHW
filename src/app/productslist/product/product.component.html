@@ -1,0 +1,16 @@
+<div class="col">
+  <div class="card" >
+    <div class="card-body">
+      <h4 class="card-title">{{product.name}}</h4>
+      <h6>Description:</h6>
+      <p class="card-text">{{product.description}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Price: {{product.price}}</li>
+    </ul>
+    <div class="card-body">
+     <button class="btn" (click)="delProduct()">Delete</button>
+    </div>
+  </div>
+</div>
+

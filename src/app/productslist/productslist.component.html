@@ -1,0 +1,7 @@
+<app-addproduct (onAdd) = "addProduct($event)"></app-addproduct>
+<hr>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <app-product *ngFor="let item of products" [product]="item" (onDel)="delProduct($event)"></app-product>
+
+</div>
+

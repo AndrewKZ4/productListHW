@@ -1,0 +1,15 @@
+<h5>Add new product</h5>
+  <div class="col-md-5">
+    <input type="text" class="form-control" id="productName" placeholder="Name" [(ngModel)]="productName">
+  </div>
+  <div class="col-md-5">
+    <input type="number" class="form-control" id="productPrice" placeholder="Price" [(ngModel)]="price">
+  </div>
+  <div class="col-md-10">
+
+    <textarea name="productDesc" id="productDesc" placeholder="Description" cols="" rows="2" [(ngModel)]="description"></textarea>
+  </div>
+  <div class="col-12">
+    <button  class="btn btn-info" (click)="addProduct()">Add product</button>
+  </div>
+
